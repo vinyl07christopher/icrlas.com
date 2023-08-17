@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICRLAS-2024</title>
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <link rel="stylesheet" href="./CSS/styles.css">
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    .main {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cards_item {
+      display: flex;
+      padding: 1rem;
+    }
+
+    .card_image {
+      height: calc(13 * 1.2rem);
+      padding: 1.2rem 1.2rem 0;
+      position: relative;
+    }
+    .card_image:before,
+    .card_image:after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      left: 60%;
+      top: 0;
+      height: 45px;
+      background: #e6e6e6b8;
+      transform: rotate(45deg);
+    }
+    .card_image:after {
+      transform: rotate(-45deg);
+      top: auto;
+      bottom: -22px;
+      left: 40%;
+    }
+    .card_image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .cards_item {
+      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 0.25rem;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      padding-left: 30px;
+      background: repeating-linear-gradient(
+            #0000 0 calc(1.2rem - 1px),
+            #66afe1 0 1.2rem
+          )
+          right bottom / 100% 100%,
+        /* linear-gradient(red 0 0) 30px 0/2px 100% #fff; */
+      /* background-repeat: no-repeat;
+      line-height: 1.2rem; */
+      /* -webkit-mask:radial-gradient(circle .8rem at 2px 50%,#0000 98%,#000)0 0/100% 2.4rem; */
+    }
+
+    .card_content {
+      padding: 1.2rem;
+    }
+
+    h2.card_title,
+    p {
+      margin: 1.2rem 0;
+      
+    }
+    h2.card_title {
+      font-size: 1.1em;
+      color: #FF8BA0;
+    }
+    /* body {
+      font-family: "Poppins", sans-serif !important;
+      background: #eee;
+    } */
+
+    html {
+      font-size: 15px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+
+
+
+
+<div class="text-center header" >
+
+  <div class=" p-5 rounded" >
+    <h1 class="">International Conference on Reinforcement Learning for Autonomous Systems
+    </h1><br>
+    
+    <h3>ICRLAS - 2024</h3> <br>
+    
+    <h3 class="text-center">
+      <!-- <i class="fa-solid fa-calendar-days"></i> -->
+            29-30, April 2024 ||
+      <!-- <i class="fa fa fa-location" ></i>  -->
+      Coimbatore, India
+    </h3>
+    
+    <div class=" my-5 text-center" style="font-weight: 400">
+      <i style="font-size: 85%">organized by</i>
+      <img class="collegeLogo" src="./Image/HCET logo.png" alt="HCET logo.png"
+           style="width: 250px; background: #fff; box-shadow: 0 0.1rem 4px #0004; padding-right: 5px; display: block; margin: 8px auto">
+      <div style="font-size: 1.2rem">Hindusthan College of Engineering and Technology</div>
+      <div style="font-size: 90%">Coimbatore, India</div>
+    </div>
+  </div>
+  
+  </div> 
+<br>
+
+<div class="row" ><div class="p-4 col-lg-3" >  
+  <nav class="navbar navbar-expand-lg navbar-light navbar rounded" style="background-color: #FFE6EE !important;">
+  <div class="container-fluid justify-content-end">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-sm-center p-4 " id="navbarNav" >
+      <ul class="navbar-nav ml-auto nav-items nav-links p-4 rounded ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./">
+            
+         
+            Home</a>
+        </li>
+
+      </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="committee.html">Committee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="cfp.html">Call for Papers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="keynote.html">Keynote</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="submission.html">Submission</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="publication.html">Publication</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="registration.html">Registration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="venue.html">Venue</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./#important-dates">Important Dates</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav></div>
+<div class="p-4 col-lg-9">
+
+ <div class="container" id="important-dates">
+
+  <h3 class="text-center">Important Dates</h3> <br>
+  <div class="container p-4  border border rounded" style="background-color: #C6FCFF;"> 
+   <h3 class="text-center">&nbsp;</h3>
+
+   <div class="container p-4 border border bg-light rounded">
+     <div class="main">
+       <ul class="cards">
+         <li class="cards_item">
+           <div class="card">
+             <div class="card_content">
+               <h2 class="card_title">Full Paper Submission Deadline:</h2>
+               
+               <div class="card_text">
+                 <p>
+                   10 December, 2023
+                 </p>
+               </div>
+             </div>
+           </div>
+         </li>
+
+         <li class="cards_item">
+           <div class="card">
+             <div class="card_content">
+               <h2 class="card_title">Notification of Revision/<wbr>Reject:</h2>
+               
+               <div class="card_text">
+                 <p>
+                   15 January, 2024
+                 </p>
+               </div>
+             </div>
+           </div>
+         </li>
+         <li class="cards_item">
+           <div class="card">
+             <div class="card_content">
+               <h2 class="card_title">Final Acceptance Intimation:</h2>
+               
+               <div class="card_text">
+                 <p>
+                   18 February, 2024
+                 </p>
+               </div>
+             </div>
+           </div>
+         </li>
+
+         <li class="cards_item">
+           <div class="card">
+             <div class="card_content">
+               <h2 class="card_title">Registration Deadline</h2>
+               
+               <div class="card_text">
+                 <p>
+                   20 March, 2024
+                 </p>
+               </div>
+             </div>
+           </div>
+         </li>
+
+         <li class="cards_item">
+           <div class="card">
+             <div class="card_content">
+               <h2 class="card_title">Conference Dates:</h2>
+               
+               <div class="card_text">
+                 <p>
+                   29-30, April 2024
+                 </p>
+               </div>
+             </div>
+           </div>
+         </li>
+       </ul>
+     </div>
+    </div>
+ </div> 
+ </div>
+
+
+  <h3 >Scope</h3> <br>
+
+  <div class="container bg-light p-4 rounded">
+
+  
+  <div class="text-block fadeIn p-1 rounded lh-lg" style="text-align: left;">
+   <p >
+    Recently, autonomous systems play a crucial role in industrial applications to smart cities. However,
+  the emergence of new technologies and its applications push the need for more research and
+  development in the domain of autonomous systems to make it more user-independent and reliable.
+  The recent advances in Artificial Intelligence, Machine Learning and Deep Learning enable
+  autonomous systems to increase its flexibility and robustness. This International Conference on
+  Reinforcement Learning for Autonomous Systems (ICRLAS 2024) is dedicated to explore the recent
+  research innovations in the areas of deep learning and autonomous systems. The theme for ICRLAS
+  “Autonomous Reinforcement Learning”, focusing the need for designing, developing and
+  implementing new algorithms and simulated environments and implement them in real-world
+  autonomous systems.
+   </p>
+  </div>
+  </div>
+
+
+<div>
+
+  <h3>
+    About - Hindusthan College of Engineering and Technology
+  </h3><br>
+  
+  <div class="container bg-light p-4 rounded lh-lg" style="text-align: left;">
+
+    <p>
+      Hindusthan College of Engineering and Technology (HiCET) Coimbatore, established in the year 2000 by the great Industrialist and Philanthropist, Thiru.T.S.R.Khannaiyann of Hindusthan Educational Trust whose determination and dynamism made possible the realization of this institution of excellence. Surrounded with natures pristine beauty and an excellent infrastructure coupled with dedicated and experienced faculty has made the campus a much sought-after abode of learning. HiCET is one of the premier technological institutions inculcating quality and value based education through innovative teaching learning process for holistic development of the Students. The institution is recognized under Section 2(f) and 12B of University Grants Commission (UGC) and is an autonomous institution affiliated to Anna University , Chennai with permanent affiliation for most of the programmes, approved by the AICTE and the Government of India. Accredited by the National Assessment and Accreditation Council (NAAC) with ‘A’ grade, National Board of Accreditation (NBA).</p>
+
+<p>The Institute is ranked 146 th in India Today Ranking and spotted as the Nodal Centre for Smart India Hackathon. One more feather in the crown is a Ford Eco sports car worth 22 lakhs gifted by Ford India and also the Best Accredited student Branch Award from Computer society of India. Further, Establishment and Innovations plays a major role in the academic year 2020-21 Centre of Excellence with Royal Enfield and Eicher Motors are established. The institution continues to be top in the country (National Rank-31 as per Education World Ranking 2021-22).</p>
+<p>HiCET conducts seminars and also invites companies to give presentations that will help our students to choose a right career for themselves and has hence contributed to the industry by successfully delivering fresh recruits who have contributed continuously to the growth of the industry by being a part of the top-notch organizations. For all these reasons HiCET has been a preferred institute for recruiting young minds.</p>
+<p>
+Currently, there are around 5000+ students pursuing various Undergraduate programs (B.E./B.Tech.), Postgraduate programs (M.E./M.Tech, MBA & MCA) and Ph.D. research programs in the Institution and are mentored by above 400 well qualified and experienced faculty members. HiCET nurtures future global leaders by imparting knowledge, skills and building attitudes among students to face the world in a fresh, energetic and unrestrictive work environment. In keeping view of the severity of COVID-19, the faculty members were able to gain and sustain student engagement by being creative with lectures that integrate props, student polling, and videos on online mode.
+
+</p>  
+  </div>
+</div>
+</div>
+
+<div>
+
+</div>
+
+</div><br><br><br><br><br>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+crossorigin="anonymous"></script>
+
+</body>
+
+
+
+
+
+</html>
